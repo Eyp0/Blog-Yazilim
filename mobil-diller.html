@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobil Uygulama Geliştirme Dilleri | Yazılım Dünyası</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="imeges/yazılım_dunyası_logo-removebg-preview.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Yazılım Dünyası</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <article class="single-post">
+            <h2>Mobil Uygulama Geliştirme Dilleri</h2>
+            <div class="post-meta">
+                <span class="date">9 Mart 2025</span>
+                
+                <span class="category">Mobil Geliştirme</span>
+            </div>
+            
+            <div class="post-image">
+                <img src="imeges/mobil.jpeg" alt="Mobil Uygulama Geliştirme Görseli">
+            </div>
+            
+            <div class="post-content">
+                <p>Akıllı telefonlar hayatımızın vazgeçilmez bir parçası haline geldi. Mobil uygulamalar geliştirmek için kullanılan başlıca diller ve teknolojiler hakkında detaylı bilgiler:</p>
+                
+                <h3>Popüler Mobil Uygulama Geliştirme Dilleri</h3>
+                
+                <h4>Swift 🍏</h4>
+                <p>Apple tarafından geliştirilen Swift, iOS ve macOS uygulamaları için modern, hızlı ve güvenli bir dil. App Store'daki çoğu uygulama Swift ile yazılıyor.</p>
+                
+                <p>Swift'in öne çıkan özellikleri:</p>
+                <ul>
+                    <li>Hızlı ve güvenli performans</li>
+                    <li>Modern ve okunabilir sözdizimi</li>
+                    <li>Apple ekosistemi ile tam entegrasyon</li>
+                    <li>Güçlü tip güvenliği ve bellek yönetimi</li>
+                </ul>
+                
+                <div class="code-example">
+                    <h5>Swift Örnek Kod:</h5>
+                    <pre>
+import UIKit
+
+class ViewController: UIViewController {
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        let mesaj = selamla(isim: "Dünya")
+        print(mesaj)
+    }
+    
+    func selamla(isim: String) -> String {
+        return "Merhaba, \(isim)!"
+    }
+}
+                    </pre>
+                </div>
+                
+                <h4>Kotlin 🤖</h4>
+                <p>Android uygulama geliştirme için Google tarafından önerilen modern bir dil. Java'ya kıyasla daha okunaklı ve verimli olmasıyla dikkat çekiyor.</p>
+                
+                <p>Kotlin'in öne çıkan özellikleri:</p>
+                <ul>
+                    <li>Java ile %100 uyumluluk</li>
+                    <li>Daha az kod yazarak daha çok iş yapabilme</li>
+                    <li>Null güvenliği ile daha az hata</li>
+                    <li>Coroutines ile asenkron programlama kolaylığı</li>
+                </ul>
+                
+                <div class="code-example">
+                    <h5>Kotlin Örnek Kod:</h5>
+                    <pre>
+import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+
+class MainActivity : AppCompatActivity() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
+        
+        val mesaj = selamla("Dünya")
+        println(mesaj)
+    }
+    
+    fun selamla(isim: String): String {
+        return "Merhaba, $isim!"
+    }
+}
+                    </pre>
+                </div>
+                
+                <h4>Flutter (Dart) 🦋</h4>
+                <p>Google'ın geliştirdiği Flutter, Dart diliyle yazılmış bir çoklu platform çerçevesidir. Tek kod tabanı ile hem iOS hem de Android için uygulama geliştirmeyi sağlar.</p>
+                
+                <p>Flutter'ın öne çıkan özellikleri:</p>
+                <ul>
+                    <li>Tek kod tabanı ile çoklu platform desteği</li>
+                    <li>Hızlı geliştirme ve Hot Reload özelliği</li>
+                    <li>Zengin widget kütüphanesi</li>
+                    <li>Yüksek performanslı render motoru</li>
+                </ul>
+                
+                <div class="code-example">
+                    <h5>Dart (Flutter) Örnek Kod:</h5>
+                    <pre>
+import 'package:flutter/material.dart';
+
+void main() {
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Flutter Örneği'),
+        ),
+        body: Center(
+          child: Text(selamla('Dünya')),
+        ),
+      ),
+    );
+  }
+  
+  String selamla(String isim) {
+    return 'Merhaba, $isim!';
+  }
+}
+                    </pre>
+                </div>
+                
+                <h3>Diğer Mobil Uygulama Geliştirme Teknolojileri</h3>
+                
+                <h4>React Native 📱</h4>
+                <p>Facebook tarafından geliştirilen React Native, JavaScript kullanarak çoklu platform uygulamaları geliştirmeyi sağlar. Web geliştiricileri için mobil dünyaya geçiş kolaylığı sunar.</p>
+                
+                <h4>Xamarin (C#) 🔷</h4>
+                <p>Microsoft'un çoklu platform çözümü olan Xamarin, C# dili ile iOS ve Android uygulamaları geliştirmeyi sağlar. .NET ekosistemi ile entegre çalışır.</p>
+                
+                <h4>Java ☕</h4>
+                <p>Uzun yıllar Android'in resmi dili olan Java, hala birçok Android uygulamasının temelini oluşturuyor. Geniş topluluk desteği ve kaynakları ile öğrenmesi kolay bir dil.</p>
+                
+                <h3>Mobil Uygulama Geliştirme Yaklaşımları</h3>
+                
+                <h4>Native Uygulama Geliştirme</h4>
+                <p>Her platform için o platformun kendi dilini ve araçlarını kullanarak geliştirme yapma yaklaşımıdır:</p>
+                <ul>
+                    <li><strong>iOS için:</strong> Swift veya Objective-C</li>
+                    <li><strong>Android için:</strong> Kotlin veya Java</li>
+                </ul>
+                <p><strong>Avantajları:</strong> En yüksek performans, tüm platform özelliklerine erişim</p>
+                <p><strong>Dezavantajları:</strong> Her platform için ayrı kod tabanı, daha yüksek maliyet ve zaman</p>
+                
+                <h4>Cross-Platform (Çoklu Platform) Geliştirme</h4>
+                <p>Tek bir kod tabanı ile birden fazla platformda çalışan uygulamalar geliştirme yaklaşımıdır:</p>
+                <ul>
+                    <li><strong>Flutter:</strong> Dart dili ile</li>
+                    <li><strong>React Native:</strong> JavaScript ile</li>
+                    <li><strong>Xamarin:</strong> C# ile</li>
+                </ul>
+                <p><strong>Avantajları:</strong> Daha hızlı geliştirme, daha düşük maliyet, tek kod tabanı</p>
+                <p><strong>Dezavantajları:</strong> Bazı durumlarda native'e göre daha düşük performans, platform özelliklerine erişim kısıtlamaları</p>
+                
+                <h3>Hangi Dili Seçmeli?</h3>
+                <p>Mobil uygulama geliştirme dili seçimi, projenin gereksinimlerine ve hedeflerinize bağlıdır:</p>
+                
+                <ul>
+                    <li><strong>Sadece iOS için uygulama geliştiriyorsanız:</strong> Swift</li>
+                    <li><strong>Sadece Android için uygulama geliştiriyorsanız:</strong> Kotlin</li>
+                    <li><strong>Hem iOS hem Android için hızlı geliştirme yapacaksanız:</strong> Flutter veya React Native</li>
+                    <li><strong>Halihazırda .NET ekosisteminde çalışıyorsanız:</strong> Xamarin</li>
+                </ul>
+                
+                <p>Mobil uygulama geliştirme dünyası sürekli gelişiyor. Hangi dili veya framework'ü seçerseniz seçin, temel programlama kavramlarını iyi anlamak ve sürekli öğrenmeye açık olmak başarı için en önemli faktörlerdir.</p>
+            </div>
+            
+            <div class="post-tags">
+                <h4>Etiketler:</h4>
+                <div class="tag-cloud">
+                    <a href="mobil-uygulama.html" class="tag">Swift</a>
+                    <a href="mobil-uygulama.html" class="tag">Kotlin</a>
+                    <a href="mobil-uygulama.html" class="tag">Flutter</a>
+                    <a href="mobil-uygulama.html" class="tag">React Native</a>
+                    <a href="mobil-uygulama.html" class="tag">Mobil Geliştirme</a>
+                </div>
+            </div>
+            
+            <div class="post-navigation">
+                <a href="index.html" class="back-to-blog">← Blog'a Dön</a>
+            </div>
+        </article>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h4>Yazılım Dünyası Hakkında</h4>
+                    <p>Yazılım Dünyası, programlama dilleri, teknoloji trendleri ve yazılım geliştirme konularında güncel bilgiler sunan bir blog sitesidir.</p>
+                </div>
+               
+                <div class="footer-social">
+                    <h4>Bizi Takip Edin</h4>
+                    <div class="social-icons">
+                        <a href="https://www.linkedin.com/in/eyüp-korkmaz-984969317/" class="social-icon" target="_blank">LinkedIn</a>
+                        <a href="https://github.com/Eyp0" class="social-icon" target="_blank">GitHub</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Yazılım Dünyası. Tüm hakları saklıdır.</p>
+                <p class="creator">Hazırlayan: Eyüp Korkmaz</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html> 
