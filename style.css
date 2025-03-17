@@ -252,6 +252,16 @@ footer {
     font-weight: 500;
 }
 
+/* Footer link stili */
+.footer-bottom a {
+    color: #3498db; /* Mavi renk tonu */
+    text-decoration: none;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline; /* Hover durumunda altı çizili olsun */
+}
+
 @media (min-width: 768px) {
     .blog-content {
         grid-template-columns: 2fr 1fr;
